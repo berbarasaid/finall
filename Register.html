@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regester</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+<style>
+   #xx{
+      position: sticky;
+      top: 0;
+     
+      
+      z-index: 9999;
+       background: linear-gradient(90deg , rgb(108, 178, 133) , rgb(70, 118, 91));
+    
+    }
+ 
+     a{
+         transition: .5s !important;
+        }
+        a:hover{
+         color:rgb(2, 108, 50) !important ;
+         text-decoration: underline;
+        }
+           #login{
+            width: 700px;
+            border: 1.5px rgb(146, 255, 222) solid;
+            padding: 50px;
+           border-radius: 10px;
+          margin: auto;
+          margin-top: 150px;
+        margin-bottom: 150px;
+          background-color: white;
+        }
+        #login h1{
+            text-align: center;
+         
+            margin-top: 20px; 
+            margin-bottom: 80px;
+            transition: .5s;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(90deg , rgb(118, 195, 146) , rgb(91, 153, 119));
+        
+          
+        }
+        h1:hover{
+transform: scale(1.2);
+color: rgb(91, 153, 119);
+        }
+       button{
+        transition: .5s !important;
+        width: 200px;
+       }
+       button:hover{
+        transform: scale(.8) !important;
+
+        background-color: rgb(91, 153, 119) !important;}
+        label , p {
+            transition: .5s;
+        }
+       
+        label:hover , p:hover {
+           transform: scale(1.2);
+color: rgb(91, 153, 119);
+        }
+        /* ---------------------------------- */
+     
+
+
+  
+
+</style>
+</head>
+<body>
+       <nav class="navbar navbar-expand-lg bg-body-tertiary" id = "xx">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><i class="fa-solid fa-book-open"></i> <strong>Bookshelf</strong></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Products.html">product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="car.html">car</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="fav.html">favorite</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">contact us </a>
+        </li>
+      
+        
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit" style="background-color: rgb(210, 241, 231);">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- ---------------------------------------------------- -->
+
+ <form class="row g-3" id ="login">
+    <h1><i class="fa-solid fa-circle-user"></i> creat account</h1>
+    <div class="row g-3">
+  <div class="col" data-aos="fade-right" data-aos-duration="1000">
+    <p>first name</p>
+    <input type="text" class="form-control" placeholder="First name" aria-label="First name" id ="first" required>
+  </div>
+  <div class="col" data-aos="fade-left"data-aos-duration="1000">
+     <p>last name</p>
+    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="last"  required>
+  </div>
+</div>
+  <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+    <label for="inputEmail4" class="form-label" >Email</label>
+    <input type="email" class="form-control" id="inputEmail4"  required>
+  </div>
+  <div class="col-md-6" data-aos="fade-left"data-aos-duration="1000">
+    <label for="inputPassword4" class="form-label">Password</label>
+    <input type="password" class="form-control" id="inputPassword4"  required>
+  </div>
+  <div class="col-12" data-aos="fade-up"
+     data-aos-duration="1000">
+    <label for="inputAddress" class="form-label" >number</label>
+    <input type="tel" class="form-control" id="num" placeholder="+20 "  required>
+  </div>
+  <div class="col-12" data-aos="fade-up"
+     data-aos-duration="1200">
+    <label for="inputAddress" class="form-label">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St"  required>
+  </div>
+  <div class="col-12" data-aos="fade-up"
+     data-aos-duration="1400">
+    <label for="inputAddress2" class="form-label">street</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor"  required>
+  </div>
+ 
+  <div class="col-md-6" data-aos="fade-right" data-aos-duration="1400">
+    <label for="inputCity" class="form-label">City</label>
+    <input type="text" class="form-control" id="inputCity"  required>
+  </div>
+  <div class="col-md-4"  data-aos="fade-up"
+     data-aos-duration="1600">
+    <label for="inputState" class="form-label">State</label>
+    <select id="inputState" class="form-select" >
+      <option selected>Choose...</option>
+      <option>...</option>
+    </select>
+  </div>
+  <div class="col-md-2" data-aos="fade-left"data-aos-duration="1400">
+    <label for="inputZip" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="inputZip">
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <div class="col-12"class="col-md-4"  data-aos="fade-up"
+     data-aos-duration="1600">
+    <button type="submit" class="btn btn-primary" >Sign in</button>
+  </div>
+</form>
+
+<!-- -------------------------------------------------------- -->
+
+
+
+
+    
+</body>
+<script src="js/bootstrap.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script >
+ AOS.init();
+  
+  document.getElementById("login").addEventListener("submit", function (e) {
+    e.preventDefault();
+ var email = document.getElementById("inputEmail4").value; 
+ console.log(email);
+ 
+ var name = document.getElementById("first").value.trim(); 
+ var last = document.getElementById("last").value; 
+ var num = document.getElementById("num").value; 
+ var address = document.getElementById("inputAddress").value; 
+ var street = document.getElementById("inputAddress2").value; 
+ var city = document.getElementById("inputCity").value; 
+ var zip = document.getElementById("inputZip").value; 
+ var password = document.getElementById("inputPassword4").value; 
+  localStorage.setItem("userEmail", email);
+  localStorage.setItem("name", name ); 
+  localStorage.setItem("last", last ); 
+  localStorage.setItem("num", num ); 
+  localStorage.setItem("address", address ); 
+  localStorage.setItem("street",  street); 
+  localStorage.setItem("city", city ); 
+  localStorage.setItem("zip", zip ); 
+   if (!validatePassword(password)) {
+        Swal.fire({
+          icon: "error",
+          title: "Invalid Password",
+          text: "Password must be at least 7 characters and contain letters and numbers."
+        });
+        return;
+    } 
+    else{
+        Swal.fire({
+  title: "Good job!",
+  text: "your account has been created!",
+  icon: "success"
+});
+  setTimeout(function () {
+          window.location.href = "index.html";
+        }, 2000); 
+    }
+})
+   function validatePassword(password) {
+      return password.length > 6 && /[a-zA-Z]/.test(password) && /\d/.test(password);
+    }
+ 
+
+</script>
+</html>

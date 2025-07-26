@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar LTR</title>
+  <!-- Bootstrap CSS -->
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <style>
+    .first {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background-color:rgb(2, 108, 50);
+      margin-top: 20px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: white;
+      width: 100%;
+    }
+
+    .main-footer {
+  background-color: #2c4755;
+  color: white;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  max-width: 400px;
+}
+
+.footer-box .icon {
+  font-size: 40px;
+  color: #7fc2a2;
+}
+
+.footer-box h3 {
+  margin: 0 0 5px;
+  font-weight: bold;
+}
+
+.footer-box p {
+  margin: 0;
+  font-size: 16px;
+}
+
+hr {
+  border-color: #45616e;
+  margin: 30px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 16px;
+}
+
+.footer-bottom .left {
+  font-weight: bold;
+}
+
+.footer-bottom .right i {
+  color: #f87c87;
+}
+
+    form {
+  
+      height: 600px;
+     
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1.5px rgb(129, 134, 129) solid;
+      box-shadow: 10px 10px 25px rgb(186, 185, 185);
+    }
+    @media (max-width: 600px) {
+  form {
+    height: 750px;
+    width: 400px;
+  }
+}
+
+
+    .user {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      width: 950px;
+     flex-wrap: wrap;
+    }
+
+
+    .user div input {
+      width: 390px;
+      border: 1.5px rgba(135, 164, 135, 0.663) solid;
+      height: 40px;
+      border-radius: 6px;
+        box-shadow: 10px 10px 25px rgba(187, 187, 187, 0.47);
+        margin-bottom: 10px;
+    }
+     @media (max-width: 600px) {
+  .user {
+   
+    width: 200px;
+  }
+  .user div input {
+    width: 150px;
+  }
+     }
+    textarea {
+      width: 100%;
+      border: 1.5px rgba(135, 164, 135, 0.663) solid;
+      height: 150px;
+      border-radius: 10px;
+    }
+
+    select {
+      width: 100%;
+      border: 1.5px rgb(60, 75, 60) solid;
+    }
+
+    .sub {
+      width: 200px;
+      height: 50px;
+      background: linear-gradient(90deg, rgb(109, 168, 109), rgb(2, 96, 2));
+      border: none;
+      border-radius: 6px;
+      color: white;
+      margin: 30px;
+    }
+
+    .bigContact {
+      display: flex;
+      margin: 100px;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+    }
+
+    .office,
+    .team,
+    .follow {
+      border-radius: 10px;
+      border: 1.5px rgb(69, 83, 69) solid;
+      margin: 10px;
+      padding: 20px;
+
+    }
+
+    .office i {
+      color: rgb(2, 108, 50);
+    }
+
+    .mm {
+      display: flex;
+      gap: 20px;
+    }
+
+    .mm p {
+      margin: 0;
+      color: #858383;
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .member {
+      display: flex;
+      gap: 20px;
+      height: 100px;
+    }
+
+    .member p {
+      margin: 0;
+      color: #858383;
+    }
+
+    h5 {
+      color:rgb(2, 108, 50);
+    }
+
+    .ccontaner {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+    }
+
+    .contaner {
+      background-color: rgba(187, 237, 208, 0.479);
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .small {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #31363d;
+      padding: 20px;
+      padding-bottom: 100px;
+      color: white;
+    }
+
+    .small i {
+      font-size: 50px;
+    }
+
+    .small p {
+      margin: 0;
+
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 40px auto;
+      font-family: Arial, sans-serif;
+    }
+
+    .faq-container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #222;
+    }
+
+    .faq-item {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      padding: 15px 20px;
+      text-align: left;
+      background-color: #f5f8ff;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      position: relative;
+    }
+
+    #vv {
+      color: #fff;
+    }
+
+    p:hover {
+      color:rgb(2, 108, 50);
+      transform: scale(1.2);
+    }
+
+    p {
+      transition: .5s;
+    }
+
+    i:hover {
+      color:rgb(2, 108, 50);
+      transform: scale(1.2);
+    }
+
+    i {
+      transition: .5s;
+    }
+
+    h5:hover {
+      color: rgb(5, 55, 5);
+      transform: scale(1.2);
+    }
+
+    h5 {
+      transition: .5s;
+    }
+
+    .faq-question::after {
+      content: "\25BC";
+      /* ▼ */
+      font-size: 14px;
+      position: absolute;
+      right: 20px;
+      transition: transform 0.3s;
+    }
+
+    .faq-question.active::after {
+      transform: rotate(180deg);
+      /* flip arrow */
+    }
+
+    .faq-question:hover {
+      background-color: rgb(2, 108, 50);
+      color: white;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 20px;
+      background-color: #fff;
+      transition: max-height 0.4s ease;
+    }
+
+    .faq-answer p {
+      padding: 15px 0;
+      margin: 0;
+      color: #444;
+    }
+
+    .navbar-nav a:hover {
+      text-decoration: underline;
+      text-underline-offset: 8px;
+      transition: all 0.3s;
+      color: rgb(2, 108, 50) !important;
+
+    }
+    #vv {
+            width: 30px;
+            text-align: center;
+        }
+          #xx{
+      position: sticky;
+      top: 0;
+     
+      
+      z-index: 9999;
+      background-color: #fff;
+    
+    }
+ 
+     a{
+         transition: .5s !important;
+        }
+        a:hover{
+         color:rgb(2, 108, 50) !important ;
+         text-decoration: underline;
+        }
+        .nn , .cc{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            padding: 10px;
+            background-color:rgb(64, 116, 97);
+            border-radius: 6px;
+           
+        }
+        .login{
+            margin: 0 20px;
+          
+        }
+        nav {
+            height: 100px;
+        }
+      
+  </style>
+</head>
+
+<body>
+ <div class="offcanvas offcanvas-start" tabindex="-1" id="mySidebar" aria-labelledby="mySidebarLabel">
+  <div class="offcanvas-header">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+<h3> <a class="nav-link active" aria-current="page" href="index.html">Home</a></h3>
+
+        </li>
+        <li class="nav-item">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+         <h3> <a class="nav-link" href="Products.html">product</a></h3>
+
+        </li>
+        <li class="nav-item">
+         <h3>  <a class="nav-link" href="car.html">cart</a></h3>
+
+        </li>
+        <li class="nav-item">
+          <h3>  <a class="nav-link" href="fav.html">favorite</a></h3>
+
+        </li>
+        <li class="nav-item">
+        <h3>   <a class="nav-link" href="contact.html">contact us </a></h3>
+
+        </li>
+      
+        
+    </ul>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+   
+  </div>
+</div>
+
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" id = "xx">
+  <div class="container-fluid">
+    <button class="side" class="btn btn-primary m-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#mySidebar"><i class="fa-solid fa-bars-staggered"></i></button>
+    <a class="navbar-brand" href="#"> <strong>Bookshelf</strong></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Products.html">product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="car.html">car</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="fav.html">favorite</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">contact us </a>
+        </li>
+      
+        
+    </ul>
+
+    <div class="login">
+     <a href="login.html" class="nn" style="background-color:  rgb(64, 116, 97);border-radius: 6px;"> log in </a><a class="nn"  href="Register.html" style="background-color:  rgb(72, 204, 160);border-radius: 6px; margin: 10px;" > regest</a>
+    </div>
+      
+    </div>
+  </div>
+</nav>
+  <div class="first">
+    <h1>contact us </h1>
+    <p>get in tutch with our team</p>
+  </div>
+  <div class="bigContact">
+
+    <form>
+      <div>
+        <h2>send us a message</h2>
+        <div class="user">
+          <div class="inf"data-aos="fade-right"data-aos-duration="1000">
+            <p>first name* </p>
+            <input type="text" >
+
+          </div>
+          <div class="inf"data-aos="fade-left" data-aos-duration="1000">
+            <p>last name* </p>
+            <input type="text" >
+
+          </div>
+          <div class="inf" data-aos="fade-right"data-aos-duration="1000">
+            <p>email address* </p>
+            <input type="email">
+
+          </div>
+          <div class="inf" data-aos="fade-left" data-aos-duration="1000">
+            <p>phone number* </p>
+            <input type="number">
+
+          </div>
+
+
+        </div>
+      </div>
+    
+      <div data-aos="fade-up"
+     data-aos-duration="2000">
+        <p>message*</p>
+        <textarea placeholder="tell us how we can help you "></textarea>
+      </div>
+      <button type="submit" class="sub"  data-aos="zoom-in" data-aos-duration="1000"><i class="fa-solid fa-paper-plane"></i> send message</button>
+    </form>
+
+    <div class="details">
+      <div class="office">
+        <h4>office information</h4>
+        <div class="mm" data-aos="fade-right"data-aos-duration="1000"><i class="fa-solid fa-location-dot"></i>
+          <div>
+            <h6>main office</h6>
+            <p>123 luxer streat</p>
+            <p>downtown destract</p>
+            <p> city, state 12345</p>
+          </div>
+        </div>
+        <div class="mm" data-aos="fade-left" data-aos-duration="1000"><i class="fa-solid fa-phone"></i>
+          <div>
+            <h6>phone</h6>
+            <p>+12345678900</p>
+          </div>
+        </div>
+        <div class="mm" data-aos="fade-right"data-aos-duration="1000"><i class="fa-solid fa-envelope"></i>
+          <div>
+            <h6>Email</h6>
+            <p>info@luxuryestates.com</p>
+          </div>
+        </div>
+        <div class="mm" data-aos="fade-left" data-aos-duration="1000"><i class="fa-solid fa-clock"></i>
+          <div>
+            <h6> business hour</h6>
+            <p>mon-fri:9:00AM-6:00PM</p>
+            <p>sat:10:00AM-4:00PM</p>
+            <p>sun:closed</p>
+          </div>
+        </div>
+      </div>
+      <div class="team">
+        <h4>our team</h4>
+        <div class="member" >
+          <img src="shutterstock_smile-or-remove-your-photo-scaled.jpg" data-aos="zoom-out" data-aos-duration="1000">
+          <div data-aos="fade-left" data-aos-duration="1000">
+            <h4>johan smith</h4>
+            <p>senior agent</p>
+            <h5>john@luxuryestates.com</h5>
+          </div>
+        </div>
+        <div class="member">
+          <img data-aos="zoom-out" data-aos-duration="1000" src="smiling-young-job-applicant-her-cv-stylish-black-jacket-33789313.webp">
+          <div data-aos="fade-left" data-aos-duration="1000">
+            <h4>sara johunson</h4>
+            <p>luxery specialist</p>
+            <h5>sara@luxuryestates.com</h5>
+          </div>
+        </div>
+        <div class="member">
+          <img src="03d8db5fa74516252ade0c0bc77aeb9e.jpg " data-aos="zoom-out" data-aos-duration="1000">
+          <div data-aos="fade-left" data-aos-duration="1000">
+            <h4>mechail broun</h4>
+            <p>senior agent</p>
+            <h5>mechail@luxuryestates.com</h5>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="follow">
+        <h4>follow us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="ccontaner">
+    <div class="contaner">
+      <div class="small">
+        <i class="fa-solid fa-map"></i>
+        <h4> inter active map</h4>
+        <p>our library location and server area</p>
+       <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.9032810000004!2d31.2100000!3d30.1230000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x123456789!2zQ2Fpcm8gVW5pdmVyc2l0eQ!5e0!3m2!1sen!2seg!4v1690000000000"
+  width="100%"
+  height="450"
+  
+   
+  style="border:0;  border-radius:10px"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+      </div>
+    </div>
+  </div>
+  <div class="faq-container">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item" data-aos="fade-up"
+     data-aos-duration="1000">
+      <button class="faq-question">what are the opening hours of the library?</button>
+      <div class="faq-answer">
+        <p> The library is open from 9 AM to 5 PM, Monday to Friday.</p>
+      </div>
+    </div>
+
+    <div class="faq-item" data-aos="fade-up"
+     data-aos-duration="1500">
+      <button class="faq-question"> Can I borrow books from the library?</button>
+      <div class="faq-answer">
+        <p> Yes, you can borrow books with your library card.</p>
+      </div>
+    </div>
+
+    <div class="faq-item"data-aos="fade-up"
+     data-aos-duration="2000">
+      <button class="faq-question">How many books can I borrow at once?</button>
+      <div class="faq-answer">
+        <p> You can borrow up to 3 books at the same time</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="main-footer">
+  <div class="footer-top">
+    <div class="footer-box">
+      <i class="fa-solid fa-layer-group icon"></i>
+      <div>
+        <h3>Book Information?</h3>
+        <p>Please send us an email at support@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-box">
+      <i class="fa-solid fa-life-ring icon"></i>
+      <div>
+        <h3>Need Help?</h3>
+        <p>Please call us at 0123456789</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="footer-bottom">
+    <p class="left">Bookshelf</p>
+    <p class="right">© 2025 All right reserved. Made with love by <i class="fa-solid fa-heart"></i> ThemeAtelier</p>
+  </div>
+</footer>
+
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+     AOS.init();
+     var x = localStorage.getItem("name"); 
+var login= document.getElementsByClassName("login")[0]; 
+      console.log(x);
+      if (x!==null) {
+login.innerHTML=`<h3 class="cc">
+${x}</h3>`
+        
+      }
+ 
+
+ 
+  const questions = document.querySelectorAll('.faq-question');
+
+  questions.forEach(q => {
+    q.addEventListener('click', () => {
+      const currentlyOpen = document.querySelector('.faq-question.active');
+      if (currentlyOpen && currentlyOpen !== q) {
+        currentlyOpen.classList.remove('active');
+        currentlyOpen.nextElementSibling.style.maxHeight = null;
+      }
+
+      q.classList.toggle('active');
+      const answer = q.nextElementSibling;
+      if (q.classList.contains('active')) {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      } else {
+        answer.style.maxHeight = null;
+      }
+    });
+  });
+   
+</script>
+
+</html>

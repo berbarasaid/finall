@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+     <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Merriweather&display=swap" rel="stylesheet">
+
+    <style>
+         #xx{
+      position: sticky;
+      top: 0;
+     
+      
+      z-index: 9999;
+      background-color: #fff;
+    
+    }
+ 
+     a{
+         transition: .5s !important;
+        }
+        a:hover{
+         color:rgb(2, 108, 50) !important ;
+         text-decoration: underline;
+        }
+        .nn , .cc{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            padding: 10px;
+            background-color:rgb(64, 116, 97);
+            border-radius: 6px;
+           
+        }
+        .login{
+            margin: 0 20px;
+          
+        }
+         html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+     
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 800px;
+     
+    }
+
+    .swiper-slide {
+     
+       background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      
+      
+    }
+    .sub{
+        width: 600px;
+        margin: 150px;
+
+    }
+    .sub h4{
+       color:rgb(64, 116, 97);
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .sub h1{
+       font-size: 4.5rem;
+       font-family: 'Playfair Display', serif;
+  color: #2d3e50;
+  margin: 40px 0;
+    }
+    .sub p{
+        color: #9e9c9c;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: 20px 0;
+        font-size: 20px;
+    }
+    .sub button{
+        width: 250px;
+        height: 50px;
+        border: none;
+        border-radius: 6px;
+        background-color:rgb(64, 116, 97) ;
+        color: white;
+        font-size: 20px;
+    }
+ 
+    #sales{
+      display: flex;
+      justify-content: space-evenly;
+      gap: 10px;
+      color: black;
+     
+     
+    }
+    .book{
+      display: flex;
+      height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+     width: 40%;
+     margin: 100px;
+ box-shadow: 10px 10px 25px rgb(164, 163, 163);
+ gap: 30px;
+    }
+    .book div{
+      /* margin:10px ; */
+      display: flex;
+     
+      flex-direction: column;
+      align-content: center;
+     
+
+    }
+    .book img{
+      margin: 0;
+      height: 250px;
+      border-radius: 10px;
+        transition: .5s;
+      
+    }
+    .mm{
+      padding: 20px;
+      margin: 20px;
+      
+    }
+    .mm p {
+    color: #7b7878;
+    }
+    .vv{
+      width: 35%;
+    }
+    .swiper-button-next ,   .swiper-button-prev  {
+      opacity: 0 !important;
+       pointer-events: none;
+  transform: translateX(-30px); 
+  transition:.5S;
+ color:white ;
+ background-color:rgb(64, 116, 97) ;
+ border-radius: 50%;
+ padding: 30px;
+ text-align: center;
+    
+    }
+    
+    .swiper-button-prev {
+  transform: translateX(30px);
+ 
+}
+
+   div:hover .swiper-button-next ,  div:hover .swiper-button-prev{
+      opacity: 1 !important;
+       pointer-events: auto;
+  transform: translateX(0); 
+    }
+    .swiper-button-next:hover,.swiper-button-prev:hover{
+      background-color: rgb(5, 21, 75);
+    }
+    .down{
+      color: green;
+    }
+    .rat{
+      color: rgb(175, 175, 5);
+    }
+    #pop{
+      
+flex-wrap: wrap;
+      display: flex;
+      gap: 20PX;
+      justify-content: space-evenly;
+    }
+    .pp{
+      width:300PX ;
+box-shadow: 10px 10px 25px rgb(164, 163, 163);
+height: 630px;
+border-radius: 10px;
+
+    }
+    .pp .img{
+        width:300PX ;
+        border-radius: 10px;
+        height: 350px;
+       transition: .5s;
+       background-size: cover;     
+  background-position: center; 
+  background-repeat: no-repeat;
+  margin: 3px;
+    }
+.pp p{
+  color: #7b7878;
+  
+}
+.pp .details{
+padding: 20px;
+margin: 10px;
+}
+
+    .titel{
+      text-align: center;
+    }
+    .titel p{
+      color:rgb(117, 202, 171) ;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 20px;
+   margin: 0;
+    }
+    .titel h1{
+       font-size: 3rem;
+       font-family: 'Playfair Display', serif;
+  color: #2d3e50;
+  margin: 0px 0 10px;
+    }
+.ss{
+  background-color: #f4f4f4;
+  padding: 30px;
+}
+#pop .detals{
+  margin: 20px;
+}
+.detals h3{
+color: #2d3e50 ;
+}
+.pp:hover img , .book:hover img{
+  transform: scale(1.05);
+}
+  .divider {
+      margin: 20px auto;
+      width: 200px;
+      height: 15px;
+      position: relative;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+      background: #b3ccc3;
+    }
+
+    .divider::before {
+      left: 0;
+    }
+
+    .divider::after {
+      right: 0;
+    }
+
+    .diamond-wrapper {
+      position: absolute;
+      left: 50%;
+      top: 60%;
+      transform: translate(-50%, -50%);
+    }
+
+    .diamond-outer {
+      width: 25px;
+      height: 25px;
+      background: #9bbfb190;
+      transform: rotate(45deg);
+      position: relative;
+    }
+
+    .diamond-inner {
+     width: 25px;
+      height: 25px;
+      background:  #9bbfb190;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      transform: translate(-65%, -10%) ;
+    }
+    #more{
+      height: 60px;
+      margin: 50px;
+      width: 200px;
+      border-radius: 6px;
+      border: none;
+     background-color: rgb(64, 116, 97);
+     color: #fff;
+     font-size: 20px;
+    }
+    .more{
+      display: flex;
+     
+      justify-content: center;
+    }
+
+
+
+      .love ,   .view {
+      opacity: 0 !important;
+       pointer-events: none;
+  transform: translateX(-30px); 
+  transition:.5S;
+ color:white ;
+ background-color: rgb(64, 116, 97) ;
+ border-radius: 50%;
+ padding: 10px;
+ margin: 10px;
+ text-align: center;
+    margin-left: 80%;
+    border: none;
+    font-size: 20px;
+    }
+
+   .pp:hover .love , .pp:hover .view{
+      opacity: 1 !important;
+       pointer-events: auto;
+  transform: translateX(0); 
+    }
+    .love:hover,.view:hover{
+      background-color: rgb(5, 21, 75);
+
+    }
+      .car {
+      opacity: 0 !important;
+       pointer-events: none;
+  transform: translatey(30px); 
+  transition:.5S;
+ color:white ;
+ background-color: rgb(64, 116, 97) ;
+ border-radius: 6px;
+ padding: 10px;
+ margin:0 20px;
+ text-align: center;
+   width: 80%;
+    border: none;
+    font-size: 20px;
+    }
+
+   .pp:hover .car {
+      opacity: 1 !important;
+       pointer-events: auto;
+  transform: translateX(0); 
+    } 
+    .pp:hover .img{
+      height: 300px;
+      transition: .3s;
+    }
+   
+    .car:hover{
+     background-color: rgb(5, 21, 75);
+
+    }
+   .smaljoin{ 
+      display: flex;
+      width: 1200px;
+      height: 450px;
+      margin: 150px 0;
+      padding: 30px;
+      gap: 30px;
+      border-radius: 10px;
+      box-shadow: 10px 10px 25px rgb(132, 132, 132);
+      
+    }
+.smaljoin h1{
+color:rgb(63, 70, 87);
+font-size: 3.5rem;
+       font-family: 'Playfair Display', serif;
+}
+.smaljoin p{
+color:rgb(151, 153, 158);
+font-size: 1.5rem;
+margin: 20px;
+      
+}
+    .join{
+     
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      justify-items: center;
+    }
+    .join img{
+      border-radius: 10px;
+     
+    }
+    .smaljoin input{
+      height: 60px;
+      width: 450px;
+      padding: 15px;
+      border: none;
+      border-radius: 6px;
+      box-shadow: 10px 10px 25px rgba(132, 132, 132, 0.603);
+
+    }
+    .smaljoin button{
+      height: 60px;
+      width: 140px;
+          border-radius: 6px;
+          border: none;
+         background-color: rgb(64, 116, 97);
+         color: #fff;
+         font-size: 20px;
+         border: none;
+    }
+     .smaljoin button:hover{
+background-color: rgb(5, 21, 75);
+transition: .5s ;
+      transform: scale(.9);
+     }
+    .smaljoin i{
+      color:white ;
+ background-color: rgb(64, 116, 97) ;
+ border-radius: 50%;
+ padding: 10px;
+ margin: 5px;
+ margin-top: 30px;
+ text-align: center;
+ font-size: 25px;
+    }
+    .smaljoin i:hover{
+background-color: rgb(5, 21, 75);
+transition: .5s ;
+    }
+    .warning{
+padding: 15px;
+background-color: rgb(233, 129, 129);
+color: red;
+border-radius: 6px;
+margin: 15px;
+    }
+    .suc{
+padding: 15px;
+background-color: rgb(143, 236, 191);
+color: green;
+border-radius: 6px;
+margin: 15px;
+    }
+    .side{
+      border: none;
+      font-size: 20px;
+    }
+    .main-footer {
+  background-color: #2c4755;
+  color: white;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  max-width: 400px;
+}
+
+.footer-box .icon {
+  font-size: 40px;
+  color: #7fc2a2;
+}
+
+.footer-box h3 {
+  margin: 0 0 5px;
+  font-weight: bold;
+}
+
+.footer-box p {
+  margin: 0;
+  font-size: 16px;
+}
+
+hr {
+  border-color: #45616e;
+  margin: 30px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 16px;
+}
+
+.footer-bottom .left {
+  font-weight: bold;
+}
+
+.footer-bottom .right i {
+  color: #f87c87;
+}
+
+    </style>
+
+
+
+
+    <style>
+.overlay-card {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+ 
+  z-index: 9999;
+}
+
+.card-content {
+ 
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 1200px;
+  height: 800px;
+ 
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+ 
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.card-content .vv {
+  width: 100px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+.card-content img {
+
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+.all{
+  display: flex;
+ gap: 370px;
+}
+
+.card-content .close  {
+  margin: 10px 5px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #00587a;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-content button:hover {
+  background-color: #003f5c;
+}
+.card-content button{
+  width: 250px;
+  height: 50px;
+}
+.card-content h1{
+  color: #003f5c;
+}
+.card-content p{
+  color: #898989;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: scale(0.9);}
+  to {opacity: 1; transform: scale(1);}
+}
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.quantity-controls button {
+  align-content: center;
+  align-items: center;
+   width: 100px;
+
+ background: #475a52;
+  font-size: 18px;
+  color: white;
+  font-size: 20px;
+  border-radius: 6px;
+}
+
+.quantity-controls .quantity {
+  font-weight: bold;
+}
+.quantity{
+  width: 50px;
+  color: #003f5c;
+  text-align: center;
+}
+.describb{
+  height: 70px;
+  border-left: 3px solid #003f5c;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 10px 10px 25px rgb(173, 169, 169);
+  margin: 20px;
+  margin-left: 0;
+}
+.bb{
+  font-size: large;
+  color: #003f5c;
+  margin: 10px 0;
+}
+
+</style>
+
+</head>
+<body>
+
+  
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mySidebar" aria-labelledby="mySidebarLabel">
+  <div class="offcanvas-header">
+
+     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+<h3> <a class="nav-link active" aria-current="page" href="index.html">Home</a></h3>
+
+        </li>
+        <li class="nav-item">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+         <h3> <a class="nav-link" href="Products.html">product</a></h3>
+
+        </li>
+        <li class="nav-item">
+         <h3>  <a class="nav-link" href="car.html">cart</a></h3>
+
+        </li>
+        <li class="nav-item">
+          <h3>  <a class="nav-link" href="fav.html">favorite</a></h3>
+
+        </li>
+        <li class="nav-item">
+        <h3>   <a class="nav-link" href="contact.html">contact us </a></h3>
+
+        </li>
+      
+        
+    </ul>
+  </div>
+ 
+</div>
+
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" id = "xx">
+  <div class="container-fluid">
+    <button class="side" class="btn btn-primary m-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#mySidebar"><i class="fa-solid fa-bars-staggered"></i></button>
+    <a class="navbar-brand" href="#"> <strong>Bookshelf</strong></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Products.html">product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="car.html">cart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="fav.html">favorite</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">contact us </a>
+        </li>
+      
+        
+    </ul>
+
+    <div class="login">
+     <a href="login.html" class="nn" style="background-color:  rgb(64, 116, 97);border-radius: 6px;"> log in </a><a class="nn"  href="Register.html" style="background-color:  rgb(72, 204, 160);border-radius: 6px; margin: 10px;" > regest</a>
+    </div>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit" style="background-color: rgb(210, 241, 231);">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+ <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(Annotation\ 2025-07-18\ 170108.jpg);"> <div class="sub"><h4>lit's make the bist investment</h4>
+    <h1>ther is no frind as loyal aas thr book</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et blanditiis porro illum distinctio laborum rerum provident, ad voluptatibus libero eos suscipit corrupti accusantium ab amet delectus? Voluptate optio suscipit corporis!</p>
+
+<button class="shop" > shop now</button></div></div>
+      <div class="swiper-slide" style="background-image:url(Annotation\ 2025-07-18\ 170143.jpg);"><div class="sub"><h4>lit's make the bist investment</h4>
+    <h1>ther is no frind as loyal aas thr book</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et blanditiis porro illum distinctio laborum rerum provident, ad voluptatibus libero eos suscipit corrupti accusantium ab amet delectus? Voluptate optio suscipit corporis!</p>
+
+<button class="shop"> shop now</button></div></div>
+      <div class="swiper-slide" style="background-image:url(Annotation\ 2025-07-18\ 170216.jpg);"><div class="sub"><h4>lit's make the bist investment</h4>
+    <h1>ther is no frind as loyal aas thr book</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et blanditiis porro illum distinctio laborum rerum provident, ad voluptatibus libero eos suscipit corrupti accusantium ab amet delectus? Voluptate optio suscipit corporis!</p>
+
+<button class="shop"> shop now</button></div></div>
+      <div class="swiper-slide" style="background-image:url(Annotation\ 2025-07-18\ 170248.jpg);"><div class="sub"><h4>lit's make the bist investment</h4>
+    <h1>ther is no frind as loyal aas thr book</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et blanditiis porro illum distinctio laborum rerum provident, ad voluptatibus libero eos suscipit corrupti accusantium ab amet delectus? Voluptate optio suscipit corporis!</p>
+
+<button class="shop" > shop now</button></div></div>
+    
+    </div>
+  
+    
+    <div class="swiper-button-next" ></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div></div>
+  <div id="sales"  data-aos="fade-up"></div>
+  <div class="ss">
+    <div class="titel">
+      <p>Books Gallery</p>
+      <h1>popular book</h1>
+    </div>
+     <div class="divider">
+       <div class="divider">
+      <div class="diamond-wrapper">
+        <div class="diamond-outer">
+          <div class="diamond-inner"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+  <div id="pop"  data-aos="fade-up"> </div>
+<div class="more">
+<button id="more"  data-aos="zoom-out" >see more</button>
+</div>
+
+</div>
+
+<div class="join">
+<div class="smaljoin">
+  <div><img src="Annotation 2025-07-24 171757.jpg" alt=""></div>
+  <div class="describ">
+    <h1>join our community</h1>
+    <p>sign up & get 10% of your first books</p>
+    <form >
+    <input type="text" placeholder="your email" id="email"><button class="subb" type="button">subsicribe</button></form>
+    <div class="message"></div>
+    <div><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-youtube"></i></div>
+  
+  </div>
+</div>
+</div>
+<footer class="main-footer">
+  <div class="footer-top">
+    <div class="footer-box">
+      <i class="fa-solid fa-layer-group icon"></i>
+      <div>
+        <h3>Book Information?</h3>
+        <p>Please send us an email at support@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-box">
+      <i class="fa-solid fa-life-ring icon"></i>
+      <div>
+        <h3>Need Help?</h3>
+        <p>Please call us at 0123456789</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="footer-bottom">
+    <p class="left">Bookshelf</p>
+    <p class="right">© 2025 All right reserved. Made with love by <i class="fa-solid fa-heart"></i> ThemeAtelier</p>
+  </div>
+</footer>
+<div class="overlay-card" id="card">
+  <div class="card-content">
+   
+    
+  
+  </div>
+</div>
+
+</body>
+<script src="js/bootstrap.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+      AOS.init();
+      let allProducts = [];
+      
+      var newarry = JSON.parse(localStorage.getItem("neww")) || [];
+      var myArray = JSON.parse(localStorage.getItem("loved")) || [];
+      var newArray = JSON.parse(localStorage.getItem("cart")) || [];
+      var x = localStorage.getItem("name"); 
+     
+      var login= document.getElementsByClassName("login")[0]; 
+      console.log(x);
+      if (x!==null) {
+login.innerHTML=`<h3 class="cc">
+${x}</h3>`
+        
+      }
+      
+
+       var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      on: {
+      slideChange: function () {
+        AOS.refresh();
+      }
+    }
+  }); AOS.init({
+    duration: 800,
+    once: false,   
+  });
+    document.addEventListener("DOMContentLoaded", function () {
+  let shopButtons = document.querySelectorAll(".shop");
+
+  shopButtons.forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.location.href = "products.html";
+    });
+  });
+});
+
+
+fetch("https://edu-me01.github.io/Json-Data/Digital-Library.json")
+  .then(request => request.json())
+  .then(data => {
+    let allProducts = data.books;
+    let sales = document.getElementById("sales");
+
+    for (let i = 0; i < 2; i++) {
+      let book = allProducts[i];
+      
+     
+      let div = document.createElement("div");
+      div.classList.add("book");
+
+      div.innerHTML = `
+      <div class="vv">
+      <img src="${book.coverImage}" alt="">
+      </div>
+      <div  class="mm">
+        <h3>${book.title}</h3>
+        <p>language: <span>${book.language}</span></p>
+        <p>format:<span> ${book.format}</span></p>
+        <p>downloads: <span class='down'><i class="fa-solid fa-download"></i>${book.downloads}</span></p>
+        <p >rating: <span class='rat'><i class="fa-solid fa-star"></i>  ${book.rating}</span></p></div>
+      `;
+
+      sales.appendChild(div);
+    }
+  })
+  .catch(err => {
+    console.error("❌ Error:", err);
+  });
+
+
+  fetch("https://edu-me01.github.io/Json-Data/Digital-Library.json")
+  .then(request => request.json())
+  .then(data => {
+     allProducts = data.books;
+    allProducts = data.books;
+    let pop = document.getElementById("pop");
+
+    for (let i = 0; i < 4; i++) {
+      let book = allProducts[i];
+     var x = newArray.find(p => p.id === book.id);
+     
+      let div = document.createElement("div");
+      div.classList.add("pp");
+      if (x==undefined||x.quantity==0) {
+        
+     
+
+      div.innerHTML = `
+      <div class="img"  style="background-image: url(${book.coverImage});" >
+       <div>
+   <button class="love"  onclick="loved(this,${book.id})" ><i class="fa-regular fa-heart"></i></button>
+
+</div>
+<div>
+    <button class="view" onclick="toggleCard(this,${book.id})"><i class="fa-solid fa-maximize"></i></button>
+
+</div>
+     </div>
+      <div  class="detals">
+        <h3>${book.title}</h3>
+        <p>language: <span>${book.language}</span></p>
+        <p>format:<span> ${book.format}</span></p>
+        <p>downloads: <span class='down'> <i class="fa-solid fa-download"></i>${book.downloads}</span></p>
+        <p >rating: <span class='rat'><i class="fa-solid fa-star"></i> ${book.rating}</span></p></div><div>
+<button class="car"  onclick="add(this,${book.id}) " ><i class="fa-solid fa-cart-shopping"></i>  add to cart</button>
+</div>
+
+      `;
+
+      pop.appendChild(div); }
+      else{
+              div.innerHTML = `
+      <div class="img"  style="background-image: url(${book.coverImage});" >
+       <div>
+   <button class="love"  onclick="loved(this,${book.id})" ><i class="fa-regular fa-heart"></i></button>
+
+</div>
+<div>
+    <button class="view" onclick="toggleCard(this,${book.id})"><i class="fa-solid fa-maximize"></i></button>
+
+</div>
+     </div>
+      <div  class="detals">
+        <h3>${book.title}</h3>
+        <p>language: <span>${book.language}</span></p>
+        <p>format:<span> ${book.format}</span></p>
+        <p>downloads: <span class='down'> <i class="fa-solid fa-download"></i>${book.downloads}</span></p>
+        <p >rating: <span class='rat'><i class="fa-solid fa-star"></i> ${book.rating}</span></p></div><div>
+<div class="quantity-controls">
+        <button onclick="decreaseQuantity(this, ${book.id})">-</button>
+        <span class="quantity">${x.quantity}</span>
+        <button onclick="increaseQuantity(this, ${book.id})">+</button>
+      </div>
+</div>
+
+      `
+       pop.appendChild(div);;
+      }
+    }
+
+  })
+  .catch(err => {
+    console.error("❌ Error:", err);
+  });
+  function loved(btn, id) {
+         const favItem = allProducts.find(p => p.id === id);
+
+         if (!favItem) {
+             Swal.fire({
+                 title: "Item not found!",
+                 icon: "error"
+             });
+             return;
+         }
+
+         const existIndex = myArray.findIndex(p => p.id === id);
+
+         if (existIndex === -1) {
+
+             myArray.push(favItem);
+             localStorage.setItem("loved", JSON.stringify(myArray));
+
+             Swal.fire({
+                 title: "Added to favorites!",
+                 icon: "success"
+             });
+             btn.classList.remove("fav_btn");
+             btn.classList.add("faved")
+         } else {
+             
+             myArray.splice(existIndex, 1);
+             localStorage.setItem("loved", JSON.stringify(myArray));
+
+             Swal.fire({
+                 title: "Removed from favorites!",
+                 icon: "warning"
+             });
+             btn.classList.remove("faved")
+             btn.classList.add("fav_btn");
+         }
+     }
+     
+
+    
+
+var more = document.getElementById("more");
+more.addEventListener("click" , function (e) {
+  e.preventDefault()
+   fetch("https://edu-me01.github.io/Json-Data/Digital-Library.json")
+  .then(request => request.json())
+  .then(data => {
+    allProducts = data.books;
+    let pop = document.getElementById("pop");
+pop.innerHTML="";
+var btn = document.getElementsByClassName("more")[0]; 
+btn.innerHTML=""
+   allProducts.forEach((item, i) => {
+      let book = allProducts[i];
+      
+     
+      let div = document.createElement("div");
+      div.classList.add("pp");
+
+     var x = newArray.find(p => p.id === book.id);
+     
+     
+      if (x==undefined||x.quantity==0) {
+        
+     
+
+      div.innerHTML = `
+      <div class="img"  style="background-image: url(${book.coverImage});" >
+       <div>
+   <button class="love"  onclick="loved(this,${book.id})" ><i class="fa-regular fa-heart"></i></button>
+
+</div>
+<div>
+    <button class="view" onclick="toggleCard(this,${book.id})"><i class="fa-solid fa-maximize"></i></button>
+
+</div>
+     </div>
+      <div  class="detals">
+        <h3>${book.title}</h3>
+        <p>language: <span>${book.language}</span></p>
+        <p>format:<span> ${book.format}</span></p>
+        <p>downloads: <span class='down'> <i class="fa-solid fa-download"></i>${book.downloads}</span></p>
+        <p >rating: <span class='rat'><i class="fa-solid fa-star"></i> ${book.rating}</span></p></div><div>
+<button class="car"  onclick="add(this,${book.id}) " ><i class="fa-solid fa-cart-shopping"></i>  add to cart</button>
+</div>
+
+      `;
+
+      pop.appendChild(div); }
+      else{
+              div.innerHTML = `
+      <div class="img"  style="background-image: url(${book.coverImage});" >
+       <div>
+   <button class="love"  onclick="loved(this,${book.id})" ><i class="fa-regular fa-heart"></i></button>
+
+</div>
+<div>
+    <button class="view" onclick="toggleCard(this,${book.id})"><i class="fa-solid fa-maximize"></i></button>
+
+</div>
+     </div>
+      <div  class="detals">
+        <h3>${book.title}</h3>
+        <p>language: <span>${book.language}</span></p>
+        <p>format:<span> ${book.format}</span></p>
+        <p>downloads: <span class='down'> <i class="fa-solid fa-download"></i>${book.downloads}</span></p>
+        <p >rating: <span class='rat'><i class="fa-solid fa-star"></i> ${book.rating}</span></p></div><div>
+<div class="quantity-controls">
+        <button onclick="decreaseQuantity(this, ${book.id})">-</button>
+        <span class="quantity">${x.quantity}</span>
+        <button onclick="increaseQuantity(this, ${book.id})">+</button>
+      </div>
+</div>
+
+      `
+       pop.appendChild(div);;
+      }
+   })
+  
+  .catch(err => {
+    console.error("❌ Error:", err);
+  });
+
+  
+})
+})
+
+
+
+var message= document.getElementsByClassName("message")[0]; 
+var subb= document.getElementsByClassName("subb")[0]; 
+subb.addEventListener("click" , function (e) {
+  e.preventDefault()
+  var email=document.getElementById("email").value; 
+  var x = 0  ; 
+if (email===""){
+  message.innerHTML=`
+  <div class="warning">0 - Please enter a value</div>`
+}
+else{
+  for (let i = 0; i < email.length; i++){
+    if(email[i]=='@'){
+      x++
+    }
+  }
+  if (x!=1) {
+     message.innerHTML=`
+  <div class="warning">0 - An email address must contain a single @.</div>`
+    
+  }else {
+     message.innerHTML=`
+  <div class="suc">Almost finished... We need to confirm your email address. To complete the subscription process, please click the link in the email we just sent you.</div>`
+    
+  }}
+
+  
+})
+function add(btn, id) {
+  const cartItem = allProducts.find(p => p.id === id);
+  if (!cartItem) return;
+
+  const existIndex = newArray.findIndex(p => p.id === id);
+
+  if (existIndex === -1) {
+   
+    const storedItem = JSON.parse(localStorage.getItem("cart"))?.find(p => p.id === id);
+    cartItem.quantity = storedItem?.quantity || 1;
+
+    newArray.push(cartItem);
+    localStorage.setItem("cart", JSON.stringify(newArray));
+
+    btn.parentElement.innerHTML = `
+      <div class="quantity-controls">
+        <button onclick="decreaseQuantity(this, ${id})">-</button>
+        <span class="quantity">${cartItem.quantity}</span>
+        <button onclick="increaseQuantity(this, ${id})">+</button>
+      </div>
+    `;
+
+    Swal.fire({ title: "Added to cart!", icon: "success" });
+  } else {
+    newArray.splice(existIndex, 1);
+    localStorage.setItem("cart", JSON.stringify(newArray));
+    btn.innerHTML = `<i class="fa-solid fa-cart-shopping"></i> Add to cart`;
+    Swal.fire({ title: "Removed from cart!", icon: "warning" });
+  }
+}
+
+function increaseQuantity(btn, id) {
+  const item = newArray.find(p => p.id === id);
+  if (item) {
+    item.quantity++;
+    localStorage.setItem("cart", JSON.stringify(newArray));
+    btn.previousElementSibling.textContent = item.quantity;
+  }
+}
+
+function decreaseQuantity(btn, id) {
+  const item = newArray.find(p => p.id === id);
+  if (item) {
+    item.quantity--;
+    if (item.quantity <= 0) {
+      
+      newArray = newArray.filter(p => p.id !== id);
+      localStorage.setItem("cart", JSON.stringify(newArray));
+      btn.parentElement.innerHTML = `<button class="car" onclick="add(this, ${id})"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>`;
+    } else {
+      btn.nextElementSibling.textContent = item.quantity;
+      localStorage.setItem("cart", JSON.stringify(newArray));
+    }
+  }
+  
+}
+           
+</script>
+
+
+
+
+
+
+
+
+
+
+<script>
+  function toggleCard( btn , id) {
+    console.log(id);
+    
+    const card = document.getElementById('card');
+    card.style.display = (card.style.display === 'flex') ? 'none' : 'flex';
+     fetch("https://edu-me01.github.io/Json-Data/Digital-Library.json")
+  .then(request => request.json())
+  .then(data => {
+    let allProducts = data.books;
+    let pop = document.getElementsByClassName("card-content")[0];
+var boook = allProducts.find(p => p.id === id);
+pop.innerHTML=`
+<div><h1> ${boook.title}</h1></div>
+<div class="all">
+
+<div class="vv"  >
+<img src="${boook.coverImage}" alt="">
+        </div>
+        <div>
+         
+          <p><span class="bb">category</span>:${boook.category}</p>
+            <p><span class="bb">author</span>:${boook.author}</p>
+            <p><span class="bb">language</span>:${boook.language}</p>
+            <p> <span class="bb">pages</span>:${boook.pages}</p>
+            <p> <span class="bb">publicationYear</span>:${boook.publicationYear}</p>
+            <p><span class="bb">format</span>:${boook.format}</p>
+            <p><span class="bb">isbn</span>:${boook.isbn}</p>
+            <p><span class="bb">format</span>:${boook.format}</p>
+            <p><span class="bb">fileSize</span>:${boook.fileSize}</p>
+            <p><span class="bb">rating</span>: <span class="rat"><i class="fa-solid fa-star"></i>  ${boook.rating}</span></p>
+            <p><span class="bb">downloads</span>:<span class="down"><i class="fa-solid fa-download"></i>${boook.downloads}</span></p>
+            <p><span class="bb">available</span>:  ${boook.available}</p>
+           <div class="describb">
+          <p><span class="bb">descriptione</span>:${boook.description}</p></div>
+    <button onclick="toggleCard()" class="close">Close</button>
+           
+          </div></div>
+
+
+`
+   
+  })
+  .catch(err => {
+    console.error("❌ Error:", err);
+  });
+
+  }
+
+  function submitAction() {
+    alert('You clicked Submit!');
+    toggleCard();
+  }
+
+  
+  window.onclick = function(event) {
+    const card = document.getElementById('card');
+    if (event.target === card) {
+      toggleCard();
+    }
+  };
+</script>
+
+
+</html>

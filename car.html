@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar LTR</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        #navbarSupportedContent {
+            direction: ltr !important;
+            text-align: left !important;
+        }
+
+        .container-fluid {
+            width: 100%;
+        }
+
+        nav {
+            width: 100%;
+        }
+
+         #xx{
+      position: sticky;
+      top: 0;
+     
+      
+      z-index: 9999;
+      background-color: #fff;
+    
+    }
+ 
+     a{
+         transition: .5s !important;
+        }
+        a:hover{
+         color:rgb(64, 116, 97) !important ;
+         text-decoration: underline;
+        }
+        .nn , .cc{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            padding: 10px;
+            background-color:rgb(64, 116, 97);
+            border-radius: 6px;
+           
+        }
+        .login{
+            margin: 0 20px;
+          
+        }
+        .first {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color:rgb(64, 116, 97);
+            margin-top: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            width: 100%;
+        }
+
+        button {
+            transition: .5s;
+        }
+
+        button:hover {
+            transform: scale(.9);
+        }
+
+        .detail {
+            display: flex;
+            justify-content: space-between;
+            width: 65%;
+            background-color: rgba(187, 237, 208, 0.479);
+            padding: 20px 70px;
+
+            border-radius: 6px;
+            margin: 30px;
+        }
+
+        .details span {
+            background-color: rgba(187, 237, 208, 0.479);
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .vew {
+            display: flex;
+            gap: 20px;
+            transition: .5s;
+        }
+
+        .vew:hover {
+            transform: scale(1.2);
+        }
+
+        .vew i {
+            font-size: 30px;
+        }
+
+
+
+
+        body {
+
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .theheading {
+            text-align: center;
+            margin-top: 20px;
+            color: rgb(64, 116, 97);
+        }
+
+        .theheading h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .theheading p {
+            font-size: 18px;
+        }
+
+
+        #favcards {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 10px 10px 25px rgb(102, 102, 102);
+            padding: 10px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            width: 90%;
+            min-height: 400px;
+            text-align: center;
+        }
+
+        #favcards p {
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+            display: flex;
+          
+            width: 100%;
+        }
+
+        .card {
+         
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 15px;
+            box-shadow: 1px 2px 10px grey;
+            transition: all 0.5s;
+            background-color: white;
+            margin: 15px;
+            text-align: left;
+            text-align: end;
+
+
+        }
+
+        .property-card {
+            text-align: left;
+
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+            box-shadow: 1px 2px 20px rgb(64, 116, 97);
+        }
+
+        .card .img {
+            width: 100%;
+          
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .card h6 {
+            text-align: left;
+            margin: 15px 0;
+            color: #666363;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        
+
+        .call {
+            width: 40%;
+        }
+
+        .headicon {
+            margin-top: 0;
+            text-align: center;
+            font-size: 24px;
+        }
+
+
+        .empty {
+            font-size: 20px;
+            text-align: center;
+        }
+
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+        .topbutton {
+            text-align: right;
+          
+        }
+
+        .clear-button {
+            width: 90%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: flex-end;
+            margin: 20px auto 0 auto;
+        }
+
+
+        .text-center p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer {
+            background-color: #313439;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-section {
+            flex: 1 1 200px;
+            margin: 20px;
+        }
+
+        .footer-section h3,
+        .footer-section h4 {
+            margin-bottom: 15px;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            margin: 5px 0;
+            display: block;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover,
+        .footer-section p:hover,
+        .footer-section i:hover,
+        .footer-bottom span:hover {
+            color:rgb(64, 116, 97);
+        }
+
+        .social-icons a {
+            margin-right: 10px;
+            font-size: 18px;
+            display: inline-block;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            border-top: 1px solid #444;
+            padding-top: 15px;
+            font-size: 14px;
+        }
+
+        .footer-bottom span {
+            color: white;
+            transition: color 0.3s;
+        }
+
+        .navbar-nav a:hover {
+            text-decoration: underline;
+            text-underline-offset: 8px;
+            transition: all 0.3s;
+            color:rgb(64, 116, 97) !important;
+
+        }
+
+        .call {
+            background-color: white;
+            border: none;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #nn {
+            width: 30px;
+            text-align: center;
+        }
+        footer{
+            width: 100%;
+        }
+    .main-footer {
+  background-color: #2c4755;
+  color: white;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  max-width: 400px;
+}
+
+.footer-box .icon {
+  font-size: 40px;
+  color:rgb(64, 116, 97);
+}
+
+.footer-box h3 {
+  margin: 0 0 5px;
+  font-weight: bold;
+}
+
+.footer-box p {
+  margin: 0;
+  font-size: 16px;
+}
+
+hr {
+  border-color: #45616e;
+  margin: 30px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 16px;
+}
+
+.footer-bottom .left {
+  font-weight: bold;
+}
+
+.footer-bottom .right i {
+  color: #f87c87;
+}
+
+
+
+#more{
+      height: 60px;
+      margin: 50px;
+      width: 200px;
+      border-radius: 6px;
+      border: none;
+     background-color: rgb(64, 116, 97);
+     color: #fff;
+     font-size: 20px;
+    }
+    .more{
+      display: flex;
+     
+      justify-content: center;
+    }
+.card{
+    height: 500px;
+    width: 300px;
+}
+.img{
+    height: 500px;
+}
+
+
+      .love ,   .view {
+      opacity: 0 !important;
+       pointer-events: none;
+  transform: translateX(-30px); 
+  transition:.5S;
+ color:white ;
+ background-color: rgb(64, 116, 97) ;
+ border-radius: 50%;
+ padding: 10px;
+ margin: 10px;
+ text-align: center;
+    margin-left: 80%;
+    border: none;
+    font-size: 20px;
+    }
+
+   .card:hover .love , .card:hover .view{
+      opacity: 1 !important;
+       pointer-events: auto;
+  transform: translateX(0); 
+    }
+    .love:hover,.view:hover{
+      background-color: rgb(5, 21, 75);
+
+    }
+      .car {
+      opacity: 0 !important;
+       pointer-events: none;
+  transform: translatey(30px); 
+  transition:.5S;
+ color:white ;
+ background-color: rgb(64, 116, 97) ;
+ border-radius: 6px;
+ padding: 10px;
+ margin:0 20px;
+ text-align: center;
+   width: 80%;
+    border: none;
+    font-size: 20px;
+    }
+
+   .card:hover .car {
+      opacity: 1 !important;
+       pointer-events: auto;
+  transform: translateX(0); 
+    } 
+    .card:hover .img{
+      height: 300px;
+      transition: .3s;
+    }
+   
+    .car:hover{
+     background-color: rgb(5, 21, 75);
+
+    }
+    .img {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+.overlay-card {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+ 
+  z-index: 9999;
+}
+
+.card-content {
+ 
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 1200px;
+  height: 800px;
+ 
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+ 
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.card-content .vv {
+  width: 100px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+.card-content img {
+
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+.all{
+  display: flex;
+ gap: 370px;
+}
+
+.card-content .close  {
+  margin: 10px 5px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #00587a;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-content button:hover {
+  background-color: #003f5c;
+}
+.card-content button{
+  width: 250px;
+  height: 50px;
+}
+.card-content h1{
+  color: #003f5c;
+}
+.card-content p{
+  color: #898989;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: scale(0.9);}
+  to {opacity: 1; transform: scale(1);}
+}
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.quantity-controls button {
+   width: 100px;
+ background: #475a52;
+  font-size: 18px;
+  color: white;
+  font-size: 20px;
+  border-radius: 6px;
+}
+
+.quantity-controls .quantity {
+  font-weight: bold;
+}
+.quantity{
+  width: 50px;
+  color: #003f5c;
+  text-align: center;
+}
+.describb{
+  height: 100px;
+  border-left: 3px solid #003f5c;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 10px 10px 25px rgb(173, 169, 169);
+  margin: 20px;
+  margin-left: 0;
+}
+.bb{
+  font-size: large;
+  color: #003f5c;
+  margin: 10px 0;
+}
+
+.down{
+      color: green;
+    }
+    .rat{
+      color: rgb(175, 175, 5);
+    }
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+   <div class="offcanvas offcanvas-start" tabindex="-1" id="mySidebar" aria-labelledby="mySidebarLabel">
+  <div class="offcanvas-header">
+
+     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+<h3> <a class="nav-link active" aria-current="page" href="index.html">Home</a></h3>
+
+        </li>
+        <li class="nav-item">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+         <h3> <a class="nav-link" href="Products.html">product</a></h3>
+
+        </li>
+        <li class="nav-item">
+         <h3>  <a class="nav-link" href="car.html">cart</a></h3>
+
+        </li>
+        <li class="nav-item">
+          <h3>  <a class="nav-link" href="fav.html">favorite</a></h3>
+
+        </li>
+        <li class="nav-item">
+        <h3>   <a class="nav-link" href="contact.html">contact us </a></h3>
+
+        </li>
+      
+        
+    </ul>
+  </div>
+ 
+</div>
+
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" id = "xx">
+  <div class="container-fluid">
+    <button class="side" class="btn btn-primary m-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#mySidebar"><i class="fa-solid fa-bars-staggered"></i></button>
+    <a class="navbar-brand" href="#"> <strong>Bookshelf</strong></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Products.html">product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="car.html">cart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="fav.html">favorite</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">contact us </a>
+        </li>
+      
+        
+    </ul>
+
+    <div class="login">
+     <a href="login.html" class="nn" style="background-color:  rgb(64, 116, 97);border-radius: 6px;"> log in </a><a class="nn"  href="Register.html" style="background-color:  rgb(72, 204, 160);border-radius: 6px; margin: 10px;" > regest</a>
+    </div>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit" style="background-color: rgb(210, 241, 231);">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="overlay-card" id="card">
+  <div class="card-content">
+   
+    
+  
+  </div>
+</div>
+    <div class="first">
+        <h1 data-aos="fade-right"data-aos-duration="1000">My cart</h1>
+        <p data-aos="fade-left" data-aos-duration="1000">Brouse the books in your cart</p>
+    </div>
+   
+
+    <div id="favcards">
+        <p><i class="fa-solid fa-heart"></i>Saved cards</p>
+    
+    </div>
+    <footer class="main-footer">
+  <div class="footer-top">
+    <div class="footer-box">
+      <i class="fa-solid fa-layer-group icon"></i>
+      <div>
+        <h3>Book Information?</h3>
+        <p>Please send us an email at support@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-box">
+      <i class="fa-solid fa-life-ring icon"></i>
+      <div>
+        <h3>Need Help?</h3>
+        <p>Please call us at 0123456789</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="footer-bottom">
+    <p class="left">Bookshelf</p>
+    <p class="right">© 2025 All right reserved. Made with love by <i class="fa-solid fa-heart"></i> ThemeAtelier</p>
+  </div>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+       AOS.init();
+        var myArray = JSON.parse(localStorage.getItem("loved")) || [];
+      var newArray = JSON.parse(localStorage.getItem("cart")) || [];
+           var x = localStorage.getItem("name"); 
+var login= document.getElementsByClassName("login")[0]; 
+      console.log(x);
+      if (x!==null) {
+login.innerHTML=`<h3 class="cc">
+${x}</h3>`
+        
+      }
+ 
+
+        const container = document.getElementById("favcards");
+        let favcards = JSON.parse(localStorage.getItem("cart")) || [];
+        console.log(favcards);
+
+       
+       
+        function trips() {
+            container.innerHTML = "";
+            container.classList.add("container");
+            if (favcards.length === 0) {
+                container.innerHTML = `
+    
+        <div class="topbutton text-end w-100 px-4 mt-4">
+             
+            <a  href="products.html" class="btn btn-primary" style="background-color: rgb(27, 138, 73) !important;">
+                <i class="fa-solid fa-plus me-2"></i> Add sample items
+            </a>
+        </div>
+        <div class="theheading">
+        <h1   >my cart <i class="fa-solid fa-bag-shopping"></i></h1>
+        <p>view your cart</p>
+    </div>
+       
+
+        <div class="d-flex align-items-center justify-content-center" style="min-height: 60vh; width: 100%;">
+            <div class="text-center" style="max-width: 500px;">
+                <h4 class="mb-3">
+                    <i class="fa-solid fa-heart-crack"></i> No books in your cart Yet
+                </h4>
+                <p class="mb-4 fs-5 text-secondary">
+                    Start exploring books and add them to your cart to see them here.
+                </p>
+                <a href="products.html" class="btn btn-primary px-4 py-2 rounded"  style="background-color: rgb(64, 116, 97)!important;">
+                    <i class="fa-solid fa-magnifying-glass-location me-2"></i> Explore books
+                </a>
+            </div>
+        </div>
+    `;
+                return;
+            }
+
+
+
+
+
+
+
+            container.innerHTML = `
+           <div class="w-100 text-end me-3 mb-3">
+      
+<button class="btn" onclick="clearAll()" style="color: green;">
+            <i class="fa-solid fa-trash "></i> Clear All
+        </button>
+  
+</div>
+
+
+        `;
+
+
+
+
+
+            favcards.forEach((item, index) => {
+                var book = favcards[index] 
+                const div = document.createElement("div");
+                div.classList.add("card");
+              var x = newArray.find(p => p.id === book.id);
+     
+     
+      if (x==undefined||x.quantity==0) {
+        
+     
+
+      div.innerHTML = `
+      <div class="img"  style="background-image: url(${book.coverImage});" >
+       <div>
+   <button class="love"  onclick="loved(this,${book.id})" ><i class="fa-regular fa-heart"></i></button>
+
+</div>
+<div>
+    <button class="view" onclick="toggleCard(this,${book.id})"><i class="fa-solid fa-maximize"></i></button>
+
+</div>
+     </div>
+      <div  class="detals">
+        <h3>${book.title}</h3>
+        <p>language: <span>${book.language}</span></p>
+        <p>format:<span> ${book.format}</span></p>
+        <p>downloads: <span class='down'> <i class="fa-solid fa-download"></i>${book.downloads}</span></p>
+        <p >rating: <span class='rat'><i class="fa-solid fa-star"></i> ${book.rating}</span></p></div><div>
+<button class="car"  onclick="add(this,${book.id}) " ><i class="fa-solid fa-cart-shopping"></i>  add to cart</button>
+</div>
+
+      `;
+
+        container.appendChild(div); }
+      else{
+              div.innerHTML = `
+      <div class="img"  style="background-image: url(${book.coverImage});" >
+       <div>
+   <button class="love"  onclick="loved(this,${book.id})" ><i class="fa-regular fa-heart"></i></button>
+
+</div>
+<div>
+    <button class="view" onclick="toggleCard(this,${book.id})"><i class="fa-solid fa-maximize"></i></button>
+
+</div>
+     </div>
+      <div  class="detals">
+        <h3>${book.title}</h3>
+        <p>language: <span>${book.language}</span></p>
+        <p>format:<span> ${book.format}</span></p>
+        <p>downloads: <span class='down'> <i class="fa-solid fa-download"></i>${book.downloads}</span></p>
+        <p >rating: <span class='rat'><i class="fa-solid fa-star"></i> ${book.rating}</span></p></div><div>
+<div class="quantity-controls">
+        <button onclick="decreaseQuantity(this, ${book.id})">-</button>
+        <span class="quantity">${x.quantity}</span>
+        <button onclick="increaseQuantity(this, ${book.id})">+</button>
+      </div>
+</div>
+
+      `
+     
+                container.appendChild(div);
+}
+            });
+        }
+
+
+
+
+       
+        
+
+        function removeFromCart(index) {
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "This item will be removed from your cart.",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d6',
+                confirmButtonText: 'Yes, remove it!',
+                cancelButtonText: 'Cancel'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    favcards.splice(index, 1);
+                    localStorage.setItem("loved", JSON.stringify(favcards));
+                    trips();
+                    Swal.fire({
+                        title: "Deleted!",
+                        text: "The item has been removed.",
+                        icon: "success",
+                        timer: 1500,
+                        showConfirmButton: false
+                    });
+                }
+            });
+        }
+
+        function clearAll() {
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "All books in cart will be deleted!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d6',
+                confirmButtonText: 'Yes, delete all!',
+                cancelButtonText: 'Cancel'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    localStorage.removeItem("cart");
+                    favcards = [];
+                    trips();
+                    Swal.fire({
+                        title: 'Deleted!',
+                        text: 'All favorites have been removed.',
+                        icon: 'success',
+                        timer: 1500,
+                        showConfirmButton: false
+                    });
+                }
+            });
+        }
+
+        trips();
+        var allProducts=[];
+         fetch("https://edu-me01.github.io/Json-Data/Digital-Library.json")
+  .then(request => request.json())
+  .then(data => {
+     allProducts = data.books;})
+         function loved(btn, id) {
+         const favItem = allProducts.find(p => p.id === id);
+
+         if (!favItem) {
+             Swal.fire({
+                 title: "Item not found!",
+                 icon: "error"
+             });
+             return;
+         }
+
+         const existIndex = myArray.findIndex(p => p.id === id);
+
+         if (existIndex === -1) {
+
+             myArray.push(favItem);
+             localStorage.setItem("loved", JSON.stringify(myArray));
+
+             Swal.fire({
+                 title: "Added to favorites!",
+                 icon: "success"
+             });
+             btn.classList.remove("fav_btn");
+             btn.classList.add("faved")
+         } else {
+             
+             myArray.splice(existIndex, 1);
+             localStorage.setItem("loved", JSON.stringify(myArray));
+
+             Swal.fire({
+                 title: "Removed from favorites!",
+                 icon: "warning"
+             });
+             btn.classList.remove("faved")
+             btn.classList.add("fav_btn");
+         }
+     }
+     
+
+    </script>
+    <script>
+function add(btn, id) {
+  const cartItem = allProducts.find(p => p.id === id);
+  if (!cartItem) return;
+
+  const existIndex = newArray.findIndex(p => p.id === id);
+
+  if (existIndex === -1) {
+   
+    const storedItem = JSON.parse(localStorage.getItem("cart"))?.find(p => p.id === id);
+    cartItem.quantity = storedItem?.quantity || 1;
+
+    newArray.push(cartItem);
+    localStorage.setItem("cart", JSON.stringify(newArray));
+
+    btn.parentElement.innerHTML = `
+      <div class="quantity-controls">
+        <button onclick="decreaseQuantity(this, ${id})">-</button>
+        <span class="quantity">${cartItem.quantity}</span>
+        <button onclick="increaseQuantity(this, ${id})">+</button>
+      </div>
+    `;
+
+    Swal.fire({ title: "Added to cart!", icon: "success" });
+  } else {
+    newArray.splice(existIndex, 1);
+    localStorage.setItem("cart", JSON.stringify(newArray));
+    btn.innerHTML = `<i class="fa-solid fa-cart-shopping"></i> Add to cart`;
+    Swal.fire({ title: "Removed from cart!", icon: "warning" });
+  }
+}
+function increaseQuantity(btn, id) {
+  const item = newArray.find(p => p.id === id);
+  if (item) {
+    item.quantity++;
+    localStorage.setItem("cart", JSON.stringify(newArray));
+    btn.previousElementSibling.textContent = item.quantity;
+  }
+}
+
+function decreaseQuantity(btn, id) {
+  const item = newArray.find(p => p.id === id);
+  if (item) {
+    item.quantity--;
+    if (item.quantity <= 0) {
+      
+      newArray = newArray.filter(p => p.id !== id);
+      localStorage.setItem("cart", JSON.stringify(newArray));
+      btn.parentElement.innerHTML = `<button class="car" onclick="add(this, ${id})"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>`;
+    } else {
+      btn.nextElementSibling.textContent = item.quantity;
+      localStorage.setItem("cart", JSON.stringify(newArray));
+    }
+  }
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+<script>
+  function toggleCard( btn , id) {
+    console.log(id);
+    
+    const card = document.getElementById('card');
+    card.style.display = (card.style.display === 'flex') ? 'none' : 'flex';
+     fetch("https://edu-me01.github.io/Json-Data/Digital-Library.json")
+  .then(request => request.json())
+  .then(data => {
+    let allProducts = data.books;
+    let pop = document.getElementsByClassName("card-content")[0];
+var boook = allProducts.find(p => p.id === id);
+pop.innerHTML=`
+<div><h1> ${boook.title}</h1></div>
+<div class="all">
+
+<div class="vv"  >
+<img src="${boook.coverImage}" alt="">
+        </div>
+        <div>
+        
+          <p><span class="bb">category</span>:${boook.category}</p>
+            <p><span class="bb">author</span>:${boook.author}</p>
+            <p><span class="bb">language</span>:${boook.language}</p>
+            <p> <span class="bb">pages</span>:${boook.pages}</p>
+            <p> <span class="bb">publicationYear</span>:${boook.publicationYear}</p>
+            <p><span class="bb">format</span>:${boook.format}</p>
+            <p><span class="bb">isbn</span>:${boook.isbn}</p>
+            <p><span class="bb">format</span>:${boook.format}</p>
+            <p><span class="bb">fileSize</span>:${boook.fileSize}</p>
+            <p><span class="bb">rating</span>: <span class="rat"><i class="fa-solid fa-star"></i>  ${boook.rating}</span></p>
+            <p><span class="bb">downloads</span>:<span class="down"><i class="fa-solid fa-download"></i>${boook.downloads}</span></p>
+            
+            <p><span class="bb">available</span>:${boook.available}</p>
+            <div class="describb">
+          <p><span class="bb">descriptione</span>:${boook.description}</p></div>
+    <button onclick="toggleCard()" class="close">Close</button>
+           
+          </div></div>
+
+
+`
+   
+  })
+  .catch(err => {
+    console.error("❌ Error:", err);
+  });
+
+  }
+
+  function submitAction() {
+    alert('You clicked Submit!');
+    toggleCard();
+  }
+
+  
+  window.onclick = function(event) {
+    const card = document.getElementById('card');
+    if (event.target === card) {
+      toggleCard();
+    }
+  };
+</script>
+
+</body>
+
+</html>
