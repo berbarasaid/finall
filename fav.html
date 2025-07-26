@@ -786,7 +786,7 @@ ${x}</h3>`
     
         <div class="topbutton text-end w-100 px-4 mt-4">
              
-            <a href="products.html" class="btn btn-primary" style="background-color: rgb(27, 138, 73) !important;">
+            <a href="Products.html" class="btn btn-primary" style="background-color: rgb(27, 138, 73) !important;">
                 <i class="fa-solid fa-plus me-2"></i> Add sample items
             </a>
         </div>
@@ -804,7 +804,7 @@ ${x}</h3>`
                 <p class="mb-4 fs-5 text-secondary">
                     Start exploring books and add them to your favorites to see them here.
                 </p>
-                <a href="products.html" class="btn btn-primary px-4 py-2 rounded"  style="background-color: rgb(64, 116, 97)!important;">
+                <a href="Products.html" class="btn btn-primary px-4 py-2 rounded"  style="background-color: rgb(64, 116, 97)!important;">
                     <i class="fa-solid fa-magnifying-glass-location me-2"></i> Explore books
                 </a>
             </div>
@@ -1010,6 +1010,10 @@ ${x}</h3>`
              });
              btn.classList.remove("faved")
              btn.classList.add("fav_btn");
+             setTimeout(function () {
+      window.location.href = "fav.html";
+    }, 1500);
+  ;
          }
      }
      
